@@ -12,14 +12,5 @@ module.exports = (opts) ->
   opts.template  = opts.t   || opts.template || __dirname + '/../assets/default.jade'
   opts.google    = opts.ga
 
-  if typeof opts.c == \boolean
-    throw 'Missing css FILE: -c /path/to/css/file'
-
-  if typeof opts.o == \boolean
-    throw 'Missing output FILE: -c /path/to/output/file'
-
-  if typeof opts.t == \boolean
-    throw 'Missing template FILE: -c /path/to/template/file'
-
   opts
 

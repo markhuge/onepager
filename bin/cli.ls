@@ -16,6 +16,25 @@ if argv.h then
   log '      --pkg FILE       specify an alternative package.json'
   process.exit 0
 
+if typeof argv.c == \boolean || typeof argv.css == \boolean
+  console.error 'Missing css FILE: -c|--css /path/to/css/file'
+  process.exit 1
+
+if typeof argv.o == \boolean || typeof argv.output == \boolean
+  console.error 'Missing output FILE: -o|--output /path/to/output/file'
+  process.exit 1
+
+if typeof argv.t == \boolean || typeof argv.template == \boolean
+  console.error 'Missing template FILE: -t|--template /path/to/template/file'
+  process.exit 1
+
+if typeof argv.pkg == \boolean
+  console.error 'Missing package FILE: --pkg /path/to/package/file'
+  process.exit 1
+
+if typeof argv.doc == \boolean
+  console.error 'Missing doc FILE: --doc /path/to/doc/file'
+  process.exit 1
 
 
 require('../')(argv);
