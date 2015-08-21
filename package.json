@@ -1,6 +1,6 @@
 {
   "name": "onepager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate pretty documentation pages for your projects",
   "main": "index.js",
   "bin": {
