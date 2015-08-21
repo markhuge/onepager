@@ -21,10 +21,13 @@ html(class='no-js')
           h1.title= name
           h2.description= description
 
-          pre npm install #{name} --save-dev
+          pre npm install #{name} --save
           
           .btn.fork
             a(href='https://github.com/#{repo.user}/#{repo.repo}') Fork me on Github
+          
+          .btn.download
+            a(href='https://github.com/#{repo.user}/#{repo.repo}/releases/latest') Download Latest
       
       section.docs
         if docs
@@ -32,7 +35,7 @@ html(class='no-js')
             != docs
       footer      
         if author
-          p.author Created by 
+          p.author Made by 
             a(href="https://github.com/#{repo.user}") #{author}
 
     if google
