@@ -1,0 +1,150 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2
+{
+    margin: 10px;
+}
+
+html,
+body
+{
+    font-family: sans-serif;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+}
+.container a,
+.container a:active,
+.container a:hover,
+.container a:visited
+{
+    text-decoration: none;
+
+    color: #333;
+}
+.container a:active,
+.container a:hover
+{
+    color: #e25440;
+}
+
+section.docs,
+section.title header
+{
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer
+{
+    font-weight: bold;
+
+    width: 100%;
+    padding: 20px;
+
+    text-align: center;
+
+    color: #666;
+    background-color: #222;
+}
+
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited,
+header a,
+header a:active,
+header a:hover,
+header a:visited
+{
+    text-decoration: none;
+
+    color: #666;
+}
+footer a:active,
+footer a:hover,
+header a:active,
+header a:hover
+{
+    color: #ccc;
+}
+
+section.title
+{
+    width: 100%;
+    margin-top: 0;
+    padding: 50px;
+
+    text-align: center;
+
+    color: #666;
+    background-color: #222;
+}
+section.title h1
+{
+    font-size: 3em;
+
+    color: white;
+}
+section.title h2
+{
+    font-style: italic;
+}
+section.title pre
+{
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+
+    color: black;
+    background-color: #aaa;
+}
+
+.docs
+{
+    padding: 20px;
+}
+.docs h1
+{
+    font-size: 3em;
+
+    text-align: center;
+}
+
+code[class^='language-'],
+pre[class^='language-']
+{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 1em;
+
+    display: block;
+    overflow-x: auto;
+
+    width: 700px;
+    padding: 1em;
+
+    color: #c5c8c6;
+    border-radius: 7px;
+    background-color: #1d1f21;
+}
+
